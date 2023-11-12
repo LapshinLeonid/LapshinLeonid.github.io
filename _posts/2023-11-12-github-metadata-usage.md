@@ -4,7 +4,7 @@ categories:
   - blog
 ---
 
-Имя репозитория: {{ site.github.name }}
+Имя репозитория: {{ site.github.public_repositories }}
 
 {% for repository in site.github.public_repositories %}
   * [{{ repository.name }}]({{ repository.html_url }})
