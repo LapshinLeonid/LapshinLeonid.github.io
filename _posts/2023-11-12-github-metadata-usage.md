@@ -19,5 +19,8 @@ categories:
 Перечень ссылок на мои публичные репозитории:
 
 {% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})
-{% endfor %}
+  {% if repository.name == site.repo_name %}
+  TRUE
+  {% endif %}
+{% endfor %} 
+
