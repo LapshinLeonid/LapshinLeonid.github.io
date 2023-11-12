@@ -3,9 +3,6 @@ title: "Использование метаданных github в посте"
 categories:
   - blog
 ---
-
-{{site.github.public_repositories}}
-
 ## Атрибуты текущего репозитория
 {% for repository in site.github.public_repositories %}
   {% if repository.name == site.repo_name %}
@@ -15,7 +12,7 @@ categories:
 
   URL-адрес:                [{{repository.html_url}}]({{repository.html_url}})  
 
-  Ссылка на профиль автора: [{{repository.owner.url}}]({{repository.owner.url}})  
+  Ссылка на профиль автора: [{{repository.owner.html_url}}]({{repository.owner.html_url}})  
   
   Аватарка автора:
   ![]({{repository.owner.avatar_url}})
