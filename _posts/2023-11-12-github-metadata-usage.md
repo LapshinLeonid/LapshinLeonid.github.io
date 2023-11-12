@@ -14,8 +14,6 @@ URL: {{ site.github.github.public_repositories.URL }}
   {% if repository.name == site.repo_name %}
   * [{{ repository.name }}]({{ repository.html_url }})
   {% endif %}
-{% endif %}
-
 {% endfor %} 
 
 1
