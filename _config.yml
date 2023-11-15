@@ -28,10 +28,10 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+# remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 15 # amount of posts to show
+paginate: 2 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -64,19 +64,22 @@ author:
   avatar : "/assets/images/avatar.png"
   bio    : "Программист ПЛК (АСУТП), пробую в web"
   links:
-    - label: "Website"
+    - label: "Мой сайт"
       icon: "fas fa-fw fa-link"
       url: "https://leonid-lapshin.com/"
-    - label: "GitHub"
+    - label: "Профиль GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/LapshinLeonid"
 
 footer:
   links:
-    - label: "GitHub"
+    - label: "Профиль GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/LapshinLeonid"
 
+collections:
+  importance-tier:
+    output: true
 
 defaults:
   # _posts
@@ -84,7 +87,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: updated-template
       author_profile: true
       read_time: true
       comments: true
@@ -97,6 +100,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: "importance-tier"
+      type: pages
+    values:
+      layout: importance-page
+      author_profile: true
+
 
 category_archive:
   type: liquid

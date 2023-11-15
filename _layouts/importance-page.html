@@ -1,0 +1,10 @@
+---
+layout: single
+---
+
+Заметки {{page.tier}} класса важности :
+{% for post in site.posts %}
+    {% if post.importance-tier == page.tier %}
+    <li><a href="{{post.url}}">{{post.title}}</a></li> 
+    {% endif %}
+{% endfor %} 
