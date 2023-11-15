@@ -1,8 +1,10 @@
 ---
-title: "Настройка шаблона"
+title: "Настройка шаблона 1"
 excerpt_separator: <!--more-->
+importance-tier : 1
 categories:
   - blog
+  - web-development
 ---
 
 Выдержка из этого поста ограничена этим абзацем.

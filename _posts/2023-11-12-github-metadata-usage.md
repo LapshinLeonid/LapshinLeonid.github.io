@@ -1,7 +1,9 @@
 ---
-title: "Использование метаданных github в посте"
+title: "Использование метаданных GitHub в посте"
+importance-tier : 2
 categories:
   - blog
+  - web-development
 ---
 ## Атрибуты текущего репозитория
 {% for repository in site.github.public_repositories %}

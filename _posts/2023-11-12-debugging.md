@@ -1,7 +1,9 @@
 ---
 title: "Дебаггинг Jekyll"
+importance-tier : 2
 categories:
   - blog
+  - web-development
 ---
 
 Изначально я пытался дебажить, пользуя логом в GitHub Actions. Сам лог выглядит следующим образом:
